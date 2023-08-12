@@ -2,10 +2,10 @@
 
 import Image from 'next/image'
 import { Heading } from '../Heading'
-import phshopImg from '../../assets/phshop.png'
+// import phshopImg from '../../assets/phshop.png'
 import { projects } from '../../assets/projects'
-import Link from 'next/link'
-import { ExternalLink, Github } from 'lucide-react'
+// import Link from 'next/link'
+// import { ExternalLink, Github } from 'lucide-react'
 
 export function Projects() {
     console.log(projects)
@@ -15,7 +15,7 @@ export function Projects() {
             <div className="flex gap-8 flex-wrap justify-center">
                 {projects.map((project) => (
                     <div
-                        key={project.id}
+                        key={project.name}
                         className="bg-white px-8 py-8 rounded-md w-[30rem] drop-shadow-xl border border-gray-300 text-left hover:scale-105 transition-all "
                     >
                         <h3 className="text-xl font-medium text-sky-900 mb-8 text-center">

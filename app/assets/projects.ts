@@ -1,10 +1,8 @@
 'use client'
-import { randomUUID } from 'crypto'
 import phshopImg from './phshop.png'
 import { StaticImageData } from 'next/image'
 
 interface IProjects {
-    id: any
     name: string
     imgUrl: StaticImageData
     description: string
@@ -15,7 +13,6 @@ interface IProjects {
 
 export const projects: IProjects[] = [
     {
-        id: randomUUID,
         name: 'PHShop',
         imgUrl: phshopImg,
         description: 'PHShop é um projeto pessoal que simula um e-commerce',
@@ -24,7 +21,6 @@ export const projects: IProjects[] = [
         techs: 'TypeScript, NextJS, ReactJS, Stitches, Stripe, Prisma, RadixUI.',
     },
     {
-        id: randomUUID,
         name: 'PHShop2',
         imgUrl: phshopImg,
         description: 'PHShop é um projeto pessoal que simula um e-commerce',
@@ -33,7 +29,6 @@ export const projects: IProjects[] = [
         techs: 'TypeScript, NextJS, ReactJS, Stitches, Stripe, Prisma, RadixUI.',
     },
     {
-        id: randomUUID,
         name: 'PHShop3',
         imgUrl: phshopImg,
         description: 'PHShop é um projeto pessoal que simula um e-commerce',

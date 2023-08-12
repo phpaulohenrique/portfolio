@@ -28,11 +28,10 @@ const techs = [
 
 export function Knowledge() {
     const [isTechHover, setIsTechHover] = useState<any>('')
-    let techDescription
+
     const showTechDescription = (techName: keyof typeof TechsNames) => {
-        // techDescription =
-        setIsTechHover(techs.find((el) => el.name == techName) ?? '')
-        console.log(techs.find((el) => el.name == 'Typescript'))
+        setIsTechHover(techs.find((el) => el.name === techName) ?? '')
+        console.log(techs.find((el) => el.name === 'Typescript'))
     }
     return (
         <section className="min-h-[60vh] pt-14" id="knowledge">
