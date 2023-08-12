@@ -75,11 +75,11 @@ export default function Home() {
                     </ul>
                 </div>
 
-                <main className="min-h-screen text-center w-full m-auto max-w-5xl p-6">
+                <main className="min-h-screen text-center w-full m-auto max-w-5xl p-6 sm:p-4">
                     <section className="min-h-screen flex items-center justify-center flex-col ">
                         <h1 className="text-2xl lg:text-3xl text-slate-700">
                             Olá, eu sou o Paulo Henrique{' '}
-                            <strong className=" text-[3.5rem] lg:text-[5rem] p-4 uppercase font-black block mt-2 mb-5 tracking-tight bg-clip-text text-transparent bg-gradient-frontend leading-[3.5rem]">
+                            <strong className=" text-[4rem] lg:text-[5rem] p-4 uppercase font-black block mb-3 tracking-tight bg-clip-text text-transparent bg-gradient-frontend leading-[4rem]">
                                 frontend developer
                             </strong>
                         </h1>

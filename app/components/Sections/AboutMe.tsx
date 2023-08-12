@@ -4,7 +4,7 @@ export function AboutMe() {
     return (
         <section className="min-h-[50vh] pt-14 " id="about-me">
             <Heading>Sobre mim</Heading>
-            <p className="text-left text-sm leading-loose">
+            <p className="text-left text-sm leading-relaxed max-w-[44rem] m-auto">
                 Sou o Paulo Henrique, tenho 22 anos, sou Desenvolvedor Front-end tenho formação em
                 análise e desenvolvimento de sistemas.
                 <br />
