@@ -1,27 +1,29 @@
-import { Link, Github } from "lucide-react";
+import Link, { LinkProps }  from 'next/link' 
+import { ReactNode } from 'react'
 
-interface IButtonLink{
-    variant: 'primary' | 'secondary',
+interface IButtonLink extends LinkProps{
+    variant: 'primary' | 'secondary'
+    children: ReactNode
+    className?: string    
 }
 
-export function ButtonLink({ variant}: IButtonLink){
-    return(
-        variant === 'primary' ? (
-            <Link
-            className="py-[0.375rem] px-4 bg-white border border-sky-600 rounded-md font-medium flex items-center gap-2"
-            href={project.githubUrl} target="_blank">
-                <Github className="w-5 h-5 text-sky-700 " />
-                GitHub
-                </Link>
-        ) : (
-            <Link
-            className="py-[0.375rem] px-4 bg-sky-600 text-white rounded-md font-medium flex items-center gap-2"
-            href={project.appUrl} target="_blank">
-                <ExternalLink className="w-5 h-5 text-white " />
-                Acessar
-            </Link>
+export function ButtonLink({ variant,children, className,  ...rest }: IButtonLink) {
+    return variant === 'primary' ? (
+        <Link
+            className={`h-11 px-6 border border-sky-500 bg-sky-600 text-white rounded-lg font-medium flex items-center gap-2 min-w-[8rem] hover:brightness-125 transition-brightness duration-300 ${className}`}
+            
+            {...rest}
 
-        )
+        >
+            {children}
 
+        </Link>
+    ) : (
+        <Link
+            className={`h-11 px-6 bg-gray-100 border border-emerald-500 text-zinc-700 rounded-lg font-medium flex items-center gap-2 min-w-[8rem] hover:bg-green-100 transition-colors duration-300 ${className}`}
+            {...rest}
+        >
+            {children}
+        </Link>
     )
 }
