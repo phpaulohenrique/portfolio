@@ -6,8 +6,9 @@ import { Projects } from './components/Sections/Projects'
 import { Knowledge } from './components/Sections/Knowledge'
 import { Contact } from './components/Sections/Contact'
 import { ButtonLink } from './components/Button/Button'
-import { Briefcase, Menu, Send, X } from 'lucide-react'
+import { ArrowDown, Briefcase, Menu, Send, X } from 'lucide-react'
 import { useState } from 'react'
+import { LinesAnimation } from './components/LinesAnimation'
 
 export default function Home() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -18,21 +19,24 @@ export default function Home() {
 
     return (
         <>
+            <LinesAnimation />
             <div className="text-gray-800">
                 <header className="w-full  bg-gray-500 fixed top-0 bg-clip-padding backdrop-filter backdrop-blur-[5px] bg-opacity-5 shadow z-20">
                     <div className="max-w-5xl m-auto flex justify-between  items-center p-4 md:p-3 h-12 ">
-                        <span className="text-gray-800 text-base">Paulo Henrique</span>
-                        <ul className="hidden gap-5 items-center text-sm text-gray-800  sm:flex ">
-                            <li>
+                        <Link href="#start">
+                            <span className="text-gray-800 text-base">Paulo Henrique</span>
+                        </Link>
+                        <ul className="hidden gap-3 items-center text-sm text-gray-700  sm:flex ">
+                            <li className="px-2 py-1 rounded-md hover:bg-slate-300 hover:text-gray-800 transition-colors duration-300 ">
                                 <Link href="#about-me">Quem sou</Link>
                             </li>
-                            <li>
+                            <li className="px-2 py-1 rounded-md hover:bg-slate-300 hover:text-gray-800 transition-colors duration-300">
                                 <Link href="#projects">Projetos</Link>
                             </li>
-                            <li>
+                            <li className="px-2 py-1 rounded-md hover:bg-slate-300 hover:text-gray-800 transition-colors duration-300">
                                 <Link href="#knowledge">Conhecimentos</Link>
                             </li>
-                            <li>
+                            <li className="px-2 py-1 rounded-md hover:bg-slate-300 hover:text-gray-800 transition-colors duration-300">
                                 <Link href="#contact">Contato</Link>
                             </li>
                         </ul>
@@ -52,22 +56,22 @@ export default function Home() {
                     }`}
                 >
                     <ul className="flex flex-col gap-4 text-sm text-gray-800  sm:hidden  ">
-                        <li className="underline decoration-solid decoration-green-500 w-max">
+                        <li className="underline decoration-solid decoration-emerald-600 underline-offset-4 w-max">
                             <Link href="#about-me" onClick={() => setIsMenuOpen(false)}>
                                 Quem sou
                             </Link>
                         </li>
-                        <li className="underline decoration-solid decoration-green-500 w-max">
+                        <li className="underline decoration-solid decoration-emerald-600 underline-offset-4  w-max">
                             <Link href="#projects" onClick={() => setIsMenuOpen(false)}>
                                 Projetos
                             </Link>
                         </li>
-                        <li className="underline decoration-solid decoration-green-500 w-max">
+                        <li className="underline decoration-solid decoration-emerald-600 underline-offset-4 w-max">
                             <Link href="#knowledge" onClick={() => setIsMenuOpen(false)}>
                                 Conhecimentos
                             </Link>
                         </li>
-                        <li className="underline decoration-solid decoration-green-500 w-max">
+                        <li className="underline decoration-solid decoration-emerald-600 underline-offset-4 w-max">
                             <Link href="#contact" onClick={() => setIsMenuOpen(false)}>
                                 Contato
                             </Link>
@@ -76,7 +80,10 @@ export default function Home() {
                 </div>
 
                 <main className="min-h-screen text-center w-full m-auto max-w-5xl p-6 sm:p-4">
-                    <section className="min-h-screen flex items-center justify-center flex-col ">
+                    <section
+                        className="min-h-screen flex items-center justify-center flex-col"
+                        id="start"
+                    >
                         <h1 className="text-2xl lg:text-3xl text-slate-700">
                             Olá, eu sou o Paulo Henrique{' '}
                             <strong className=" text-[4rem] lg:text-[5rem] p-4 uppercase font-black block mb-3 tracking-tight bg-clip-text text-transparent bg-gradient-frontend leading-[4rem]">
@@ -98,6 +105,16 @@ export default function Home() {
                                 Contato
                             </ButtonLink>
                         </div>
+                        {/* <div className="flex gap-2">
+                            <span className="relative h-4 w-4">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                                <span className="absolute inline-flex rounded-full h-4 w-4 bg-green-500"></span>
+                            </span>
+                            <span>Open to work</span>
+
+                        </div> */}
+
+                        <ArrowDown className="w-6 h-6 text-fuchsia-600 absolute bottom-20 animate-bounce " />
                     </section>
                     <>
                         <AboutMe />
