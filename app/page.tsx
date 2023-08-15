@@ -13,8 +13,7 @@ import { LinesAnimation } from './components/LinesAnimation'
 export default function Home() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-    const toggleMenuBar = () =>
-        setIsMenuOpen((state) => !state)
+    const toggleMenuBar = () => setIsMenuOpen((state) => !state)
 
     return (
         <>
@@ -125,7 +124,6 @@ export default function Home() {
 
                 <footer className="bg-gray-200 h-28 mt-20">
                     <span></span>
-                    
                 </footer>
             </div>
         </>
