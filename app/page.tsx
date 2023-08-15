@@ -14,7 +14,6 @@ export default function Home() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     const toggleMenuBar = () =>
-        // console.log('oi')
         setIsMenuOpen((state) => !state)
 
     return (
@@ -114,7 +113,7 @@ export default function Home() {
 
                         </div> */}
 
-                        <ArrowDown className="w-6 h-6 text-fuchsia-600 absolute bottom-20 animate-bounce " />
+                        <ArrowDown className="w-4 h-4 text-fuchsia-600 absolute bottom-20 animate-bounce " />
                     </section>
                     <>
                         <AboutMe />
@@ -124,7 +123,10 @@ export default function Home() {
                     </>
                 </main>
 
-                <footer className="bg-gray-200 h-28 mt-20"></footer>
+                <footer className="bg-gray-200 h-28 mt-20">
+                    <span></span>
+                    
+                </footer>
             </div>
         </>
     )
