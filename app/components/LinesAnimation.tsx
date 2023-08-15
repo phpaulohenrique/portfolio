@@ -9,7 +9,7 @@ export function LinesAnimation() {
             viewBox="0 0 1217 479"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="fixed top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2"
+            className="fixed -z-1 top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2"
         >
             <path
                 d="M632 168L632 122C632 113.163 639.163 106 648 106L661 106"
