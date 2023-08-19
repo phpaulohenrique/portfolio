@@ -8,7 +8,7 @@ import { ButtonLink } from './components/Button/Button'
 import { ArrowDown, Briefcase, Menu, Send, X } from 'lucide-react'
 import { useState } from 'react'
 import { LinesAnimation } from './components/LinesAnimation'
-import { Fade, JackInTheBox, Roll, Slide, } from 'react-awesome-reveal'
+import { Fade, Slide } from 'react-awesome-reveal'
 
 export default function Home() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -82,33 +82,31 @@ export default function Home() {
                         className="min-h-screen flex items-center justify-center flex-col"
                         id="start"
                     >
-                        
-                        <Slide direction='up' triggerOnce>
+                        <Slide direction="up" triggerOnce>
                             <h1 className="text-2xl lg:text-3xl text-slate-700">
                                 Olá, eu sou o Paulo Henrique{' '}
                                 <Fade delay={500} triggerOnce>
-
-                                    <strong  className=" text-[4rem] lg:text-[5rem] p-4 uppercase font-black block mb-3 tracking-tight bg-clip-text text-transparent bg-gradient-frontend leading-[4rem]">
+                                    <strong className=" text-[4rem] lg:text-[5rem] p-4 uppercase font-black block mb-3 tracking-tight bg-clip-text text-transparent bg-gradient-frontend leading-[4rem]">
                                         frontend developer
                                     </strong>
                                 </Fade>
                             </h1>
-                        <p className="max-w-lg text-base text-blue-900">
-                            Sou Desenvolvedor Web com foco em desenvolvimento Frontend. Transformo
-                            problemas em interfaces simples através do código.
-                        </p>
+                            <p className="max-w-lg text-base text-blue-900">
+                                Sou Desenvolvedor Web com foco em desenvolvimento Frontend.
+                                Transformo problemas em interfaces simples através do código.
+                            </p>
 
-                        <div className="flex gap-4 mt-8">
-                            <ButtonLink variant="secondary" href="#projects">
-                                <Briefcase className="w-6 h-6 text-emerald-600 " />
-                                Projetos
-                            </ButtonLink>
-                            <ButtonLink variant="primary" href="#contact">
-                                <Send className="w-5 h-5 text-white " />
-                                Contato
-                            </ButtonLink>
-                        </div>
-                        {/* <div className="flex gap-2">
+                            <div className="flex gap-4 mt-8">
+                                <ButtonLink variant="secondary" href="#projects">
+                                    <Briefcase className="w-6 h-6 text-emerald-600 " />
+                                    Projetos
+                                </ButtonLink>
+                                <ButtonLink variant="primary" href="#contact">
+                                    <Send className="w-5 h-5 text-white " />
+                                    Contato
+                                </ButtonLink>
+                            </div>
+                            {/* <div className="flex gap-2">
                             <span className="relative h-4 w-4">
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
                                 <span className="absolute inline-flex rounded-full h-4 w-4 bg-green-500"></span>
@@ -116,8 +114,7 @@ export default function Home() {
                             <span>Open to work</span>
 
                         </div> */}
-
-                    </Slide>
+                        </Slide>
                         <ArrowDown className="w-5 h-5 text-purple-600 absolute bottom-20 animate-bounce " />
                     </section>
                     <>

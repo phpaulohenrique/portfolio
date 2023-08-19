@@ -2,13 +2,13 @@ import { Heading } from '../Heading'
 import jsIcon from '@/app/assets/icons/js.svg'
 import reactjsIcon from '@/app/assets/icons/reactjs.svg'
 import tsIcon from '@/app/assets/icons/ts.svg'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { useState } from 'react'
 import { Fade } from 'react-awesome-reveal'
 
 interface ITech {
     name: string
-    icon: any
+    icon: StaticImageData
     description: string
 }
 
@@ -49,30 +49,30 @@ export function Knowledge() {
     return (
         <section className="min-h-[60vh] pt-14 mt-10" id="knowledge">
             <Fade damping={0.1} cascade triggerOnce>
-            <Heading>Conhecimentos</Heading>
-            <div className="flex justify-around flex-col gap-6 sm:flex-row sm:gap-0 items-center md:items-start">
-                <div className="max-w-sm w-full order-2 sm:order-1">
-                    {
-                        <p className="text-sm text-gray-700 leading-loose text-left">
-                            {currentTechOnHover?.description ??
-                                '*passe o cursor do mouse no card para ler'}
-                        </p>
-                    }
-                </div>
+                <Heading>Conhecimentos</Heading>
+                <div className="flex justify-around flex-col gap-6 sm:flex-row sm:gap-0 items-center md:items-start">
+                    <div className="max-w-sm w-full order-2 sm:order-1">
+                        {
+                            <p className="text-sm text-gray-700 leading-loose text-left">
+                                {currentTechOnHover?.description ??
+                                    '*passe o cursor do mouse no card para ler'}
+                            </p>
+                        }
+                    </div>
 
-                <div className="grid grid-cols-3 lg:grid-cols-4 w-max gap-4 order-1 sm:order-2">
-                    {techs.map((tech) => (
-                        <Image
-                            key={tech.name}
-                            src={tech.icon}
-                            alt="Javascript logo"
-                            className="border border-gray-300 w-20 rounded bg-gray-100 hover:border-sky-600 transition-colors"
-                            onMouseOver={() => showTechDescription(tech.name)}
-                            onMouseOut={() => setCurrentTechOnHover(null)}
-                        />
-                    ))}
+                    <div className="grid grid-cols-3 lg:grid-cols-4 w-max gap-4 order-1 sm:order-2">
+                        {techs.map((tech) => (
+                            <Image
+                                key={tech.name}
+                                src={tech.icon}
+                                alt="Javascript logo"
+                                className="border border-gray-300 w-20 rounded bg-gray-100 hover:border-sky-600 transition-colors"
+                                onMouseOver={() => showTechDescription(tech.name)}
+                                onMouseOut={() => setCurrentTechOnHover(null)}
+                            />
+                        ))}
+                    </div>
                 </div>
-            </div>
             </Fade>
         </section>
     )
