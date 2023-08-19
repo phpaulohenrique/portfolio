@@ -1,5 +1,4 @@
 'use client'
-import Image from 'next/image'
 import Link from 'next/link'
 import { AboutMe } from './components/Sections/AboutMe'
 import { Projects } from './components/Sections/Projects'
@@ -9,6 +8,7 @@ import { ButtonLink } from './components/Button/Button'
 import { ArrowDown, Briefcase, Menu, Send, X } from 'lucide-react'
 import { useState } from 'react'
 import { LinesAnimation } from './components/LinesAnimation'
+import { Fade, JackInTheBox, Roll, Slide, } from 'react-awesome-reveal'
 
 export default function Home() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -49,12 +49,12 @@ export default function Home() {
                 </header>
 
                 <div
-                    className={` bg-clip-padding backdrop-filter backdrop-blur-[10px] bg-opacity-[.15] shadow-lg bg-teal-100 w-full py-5 px-6 -translate-y-full fixed transition-translate duration-500 ease-out z-10 ${
+                    className={`bg-clip-padding backdrop-filter backdrop-blur-[10px] bg-opacity-[.15] shadow-lg bg-teal-100 w-full py-5 px-6 -translate-y-full fixed transition-translate duration-500 ease-out z-10 ${
                         isMenuOpen && 'mt-12 fixed translate-y-0'
                     }`}
                 >
                     <ul className="flex flex-col gap-4 text-sm text-gray-800  sm:hidden  ">
-                        <li className="underline decoration-solid decoration-emerald-600 underline-offset-4 w-max">
+                        <li className="underline decoration-solid decoration-emerald-600 underline-offset-4 w-max ">
                             <Link href="#about-me" onClick={() => setIsMenuOpen(false)}>
                                 Quem sou
                             </Link>
@@ -82,12 +82,17 @@ export default function Home() {
                         className="min-h-screen flex items-center justify-center flex-col"
                         id="start"
                     >
-                        <h1 className="text-2xl lg:text-3xl text-slate-700">
-                            Olá, eu sou o Paulo Henrique{' '}
-                            <strong className=" text-[4rem] lg:text-[5rem] p-4 uppercase font-black block mb-3 tracking-tight bg-clip-text text-transparent bg-gradient-frontend leading-[4rem]">
-                                frontend developer
-                            </strong>
-                        </h1>
+                        
+                        <Slide direction='up' triggerOnce>
+                            <h1 className="text-2xl lg:text-3xl text-slate-700">
+                                Olá, eu sou o Paulo Henrique{' '}
+                                <Fade delay={500} triggerOnce>
+
+                                    <strong  className=" text-[4rem] lg:text-[5rem] p-4 uppercase font-black block mb-3 tracking-tight bg-clip-text text-transparent bg-gradient-frontend leading-[4rem]">
+                                        frontend developer
+                                    </strong>
+                                </Fade>
+                            </h1>
                         <p className="max-w-lg text-base text-blue-900">
                             Sou Desenvolvedor Web com foco em desenvolvimento Frontend. Transformo
                             problemas em interfaces simples através do código.
@@ -112,7 +117,8 @@ export default function Home() {
 
                         </div> */}
 
-                        <ArrowDown className="w-4 h-4 text-fuchsia-600 absolute bottom-20 animate-bounce " />
+                    </Slide>
+                        <ArrowDown className="w-5 h-5 text-purple-600 absolute bottom-20 animate-bounce " />
                     </section>
                     <>
                         <AboutMe />
@@ -122,7 +128,7 @@ export default function Home() {
                     </>
                 </main>
 
-                <footer className="bg-gray-200 h-28 mt-20">
+                <footer className="bg-gray-200 h-28 mt-10">
                     <span></span>
                 </footer>
             </div>

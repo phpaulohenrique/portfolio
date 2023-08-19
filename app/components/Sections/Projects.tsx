@@ -1,22 +1,57 @@
-'use client'
-
 import Image from 'next/image'
 import { Heading } from '../Heading'
-// import phshopImg from '../../assets/phshop.png'
-import { projects } from '../../assets/projects'
 import { ButtonLink } from '../Button/Button'
 import { Github, Send } from 'lucide-react'
 import Link from 'next/link'
-// import Link from 'next/link'
-// import { ExternalLink, Github } from 'lucide-react'
+import phshopImg from '../../assets/phshop.png'
+import { StaticImageData } from 'next/image'
+import { Fade, Slide } from 'react-awesome-reveal'
+
+interface IProjects {
+    name: string
+    imgUrl: StaticImageData
+    description: string
+    appUrl: string
+    githubUrl: string
+    techs: string
+}
+
+export const myProjects: IProjects[] = [
+    {
+        name: 'PHShop',
+        imgUrl: phshopImg,
+        description: 'PHShop é um projeto pessoal que simula um e-commerce',
+        appUrl: 'https://ph-shop.vercel.app',
+        githubUrl: 'https://github.com/phpaulohenrique/ph-shop',
+        techs: 'TypeScript, NextJS, ReactJS, Stitches, Stripe, Prisma, RadixUI.',
+    },
+    {
+        name: 'PHShop2',
+        imgUrl: phshopImg,
+        description: 'PHShop é um projeto pessoal que simula um e-commerce',
+        appUrl: 'https://ph-shop.vercel.app',
+        githubUrl: 'https://github.com/phpaulohenrique/ph-shop',
+        techs: 'TypeScript, NextJS, ReactJS, Stitches, Stripe, Prisma, RadixUI.',
+    },
+    {
+        name: 'PHShop3',
+        imgUrl: phshopImg,
+        description: 'PHShop é um projeto pessoal que simula um e-commerce',
+        appUrl: 'https://ph-shop.vercel.app',
+        githubUrl: 'https://github.com/phpaulohenrique/ph-shop',
+        techs: 'TypeScript, NextJS, ReactJS, Stitches, Stripe, Prisma, RadixUI.',
+    },
+]
+
 
 export function Projects() {
-    console.log(projects)
     return (
         <section className="min-h-[60vh] pt-14" id="projects">
+
             <Heading>Projetos</Heading>
             <div className="flex gap-6 sm:gap-4 flex-wrap justify-center">
-                {projects.map((project) => (
+                <Fade  cascade damping={0.2} triggerOnce>
+                {myProjects.map((project) => (
                     <div
                         key={project.name}
                         className="bg-white px-6 py-6 rounded-md w-[28rem] drop-shadow-xl border border-gray-300 text-left hover:scale-[1.02] transition-all "
@@ -52,6 +87,7 @@ export function Projects() {
                         </div>
                     </div>
                 ))}
+                </Fade>
             </div>
 
             <Link

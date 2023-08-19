@@ -17,7 +17,7 @@ export function ButtonLink({ variant, children, className, ...rest }: IButtonLin
         </Link>
     ) : (
         <Link
-            className={`h-11 px-6 bg-gray-100 border border-emerald-400 text-zinc-700 rounded-lg font-medium flex items-center gap-2 min-w-[8rem] hover:bg-green-100 transition-colors duration-300 ${className}`}
+            className={`h-11 px-6 bg-transparent border border-emerald-400 text-zinc-700 rounded-lg font-medium flex items-center gap-2 min-w-[8rem] hover:bg-green-100 transition-colors duration-300 ${className}`}
             {...rest}
         >
             {children}

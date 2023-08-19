@@ -1,8 +1,10 @@
-'use client'
 import { Heading } from '../Heading'
 import jsIcon from '@/app/assets/icons/js.svg'
+import reactjsIcon from '@/app/assets/icons/reactjs.svg'
+import tsIcon from '@/app/assets/icons/ts.svg'
 import Image from 'next/image'
 import { useState } from 'react'
+import { Fade } from 'react-awesome-reveal'
 
 interface ITech {
     name: string
@@ -20,13 +22,13 @@ const techs: ITech[] = [
     },
     {
         name: 'Typescript',
-        icon: jsIcon,
+        icon: tsIcon,
         description:
             'TypeScript é uma linguagem de programação que estende o JavaScript, adicionando tipagem estática e recursos avançados de orientação a objetos, tornando o desenvolvimento de software mais robusto e escalável.',
     },
     {
         name: 'ReactJS',
-        icon: jsIcon,
+        icon: reactjsIcon,
         description:
             'ReactJS é uma biblioteca JavaScript usada para construir interfaces de usuário interativas e reativas, permitindo a criação de componentes reutilizáveis para construir aplicativos web modernos.',
     },
@@ -43,15 +45,15 @@ export function Knowledge() {
 
     const showTechDescription = (techName: string) => {
         setCurrentTechOnHover(techs.find((el) => el.name === techName) || null)
-        console.log(techs.find((el) => el.name === 'Typescript'))
     }
     return (
         <section className="min-h-[60vh] pt-14 mt-10" id="knowledge">
+            <Fade damping={0.1} cascade triggerOnce>
             <Heading>Conhecimentos</Heading>
-            <div className="flex justify-around flex-col gap-6 sm:flex-row sm:gap-0 items-start">
+            <div className="flex justify-around flex-col gap-6 sm:flex-row sm:gap-0 items-center md:items-start">
                 <div className="max-w-sm w-full order-2 sm:order-1">
                     {
-                        <p className="text-sm text-gray-700 leading-relaxed text-left">
+                        <p className="text-sm text-gray-700 leading-loose text-left">
                             {currentTechOnHover?.description ??
                                 '*passe o cursor do mouse no card para ler'}
                         </p>
@@ -62,7 +64,7 @@ export function Knowledge() {
                     {techs.map((tech) => (
                         <Image
                             key={tech.name}
-                            src={jsIcon}
+                            src={tech.icon}
                             alt="Javascript logo"
                             className="border border-gray-300 w-20 rounded bg-gray-100 hover:border-sky-600 transition-colors"
                             onMouseOver={() => showTechDescription(tech.name)}
@@ -71,6 +73,7 @@ export function Knowledge() {
                     ))}
                 </div>
             </div>
+            </Fade>
         </section>
     )
 }
