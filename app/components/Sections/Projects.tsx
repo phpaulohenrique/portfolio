@@ -3,7 +3,7 @@ import { Heading } from '../Heading'
 import { ButtonLink } from '../Button/Button'
 import { Github, Send } from 'lucide-react'
 import Link from 'next/link'
-import phshopImg from '../../assets/phshop.png'
+import phshopImg from '../../assets/img/phshop.png'
 import { Fade } from 'react-awesome-reveal'
 
 interface IProjects {

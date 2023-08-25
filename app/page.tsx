@@ -85,7 +85,7 @@ export default function Home() {
                         <Slide direction="up" triggerOnce>
                             <h1 className="text-2xl lg:text-3xl text-slate-700">
                                 Olá, eu sou o Paulo Henrique{' '}
-                                <Fade delay={500} triggerOnce>
+                                <Fade delay={200} triggerOnce>
                                     <strong className=" text-[4rem] lg:text-[5rem] p-4 uppercase font-black block mb-3 tracking-tight bg-clip-text text-transparent bg-gradient-frontend leading-[4rem]">
                                         frontend developer
                                     </strong>
