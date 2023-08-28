@@ -131,7 +131,7 @@ export function Knowledge() {
                                 key={tech.name}
                                 src={tech.icon}
                                 alt="Javascript logo"
-                                className="border border-gray-300 w-20 h-20 p-4 rounded   hover:border-sky-500 transition-colors hover:shadow-lg hover:shadow-emerald-200"
+                                className="border border-gray-300 w-[4.5rem] h-[4.5rem] p-4 rounded   hover:border-sky-500 transition-colors hover:shadow-lg hover:shadow-emerald-200"
                                 onMouseOver={() => showTechDescription(tech.name)}
                                 onMouseOut={() => setCurrentTechOnHover(null)}
                             />
