@@ -13,6 +13,9 @@ import htmlIcon from '@/app/assets/icons/html.svg'
 import styledcomponentsIcon from '@/app/assets/icons/styledcomponents.svg'
 import radixuiIcon from '@/app/assets/icons/radixui.svg'
 import sassIcon from '@/app/assets/icons/sass.svg'
+import stitchesIcon from '@/app/assets/icons/stitches.svg'
+import chakrauiIcon from '@/app/assets/icons/chakraui.svg'
+import storybookIcon from '@/app/assets/icons/storybook.svg'
 
 interface ITech {
     name: string
@@ -46,11 +49,11 @@ const techs: ITech[] = [
         description:
             'NextJS é um framework de desenvolvimento React que simplifica a criação de aplicativos web com renderização do lado do servidor, facilitando o desempenho, SEO e a construção de páginas dinâmicas.',
     },
-        {
+    {
         name: 'TailwindCSS',
         icon: tailwindIcon,
         description:
-            ' Tailwind CSS é um framework de design de código aberto que oferece classes utilitárias pré-definidas para criar interfaces de usuário responsivas e estilizadas de forma eficiente, permitindo a construção rápida de designs personalizados em aplicações web.'
+            ' Tailwind CSS é um framework de design de código aberto que oferece classes utilitárias pré-definidas para criar interfaces de usuário responsivas e estilizadas de forma eficiente, permitindo a construção rápida de designs personalizados em aplicações web.',
     },
     {
         name: 'HTML',
@@ -58,27 +61,45 @@ const techs: ITech[] = [
         description:
             'HTML (HyperText Markup Language) é uma linguagem de marcação utilizada para estruturar o conteúdo de páginas da web. Ela define elementos e tags que permitem definir a semântica e a organização do conteúdo, como títulos, parágrafos, imagens e links, para que os navegadores possam interpretar e exibir corretamente o conteúdo aos usuários.',
     },
-            {
+    {
         name: 'CSS',
         icon: cssIcon,
         description:
             'CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para definir a apresentação e o design visual de páginas da web escritas em HTML ou outras linguagens de marcação. Com o CSS, é possível controlar a cor, fonte, espaçamento, layout e outros aspectos visuais dos elementos HTML, permitindo a criação de páginas web atraentes e consistentes.',
     },
-            {
+    {
         name: 'Radix UI',
         icon: radixuiIcon,
         description:
-            'Radix UI é um conjunto de componentes de interface de usuário (UI) em código aberto construído para ser modular, acessível e fácil de usar. Ele fornece componentes de base para criação de interfaces de usuário modernas e interativas. Os componentes do Radix UI abrangem desde menus e modais até tooltips e popovers.'
+            'Radix UI é um conjunto de componentes de interface de usuário (UI) em código aberto construído para ser modular, acessível e fácil de usar. Ele fornece componentes de base para criação de interfaces de usuário modernas e interativas. Os componentes do Radix UI abrangem desde menus e modais até tooltips e popovers.',
     },
-                {
+    {
         name: 'Styled Components',
         icon: styledcomponentsIcon,
         description:
             'Styled Components é uma biblioteca popular de estilo para aplicações React. Ela permite que você crie componentes React com estilos CSS diretamente no código JavaScript, usando uma abordagem baseada em tagged template literals. Isso torna o gerenciamento de estilos mais modular, permitindo a criação de componentes estilizados de maneira mais organizada e reutilizável.',
     },
-                {
+    {
         name: 'Sass',
         icon: sassIcon,
+        description:
+            'Sass (Syntactically Awesome Style Sheets) é uma extensão da linguagem CSS que oferece recursos avançados, como variáveis, aninhamento, mixins e funções, para facilitar a escrita e a organização de estilos. Com o Sass, é possível criar estilos mais eficientes e flexíveis, permitindo uma abordagem mais modular e escalável para o design de páginas da web.',
+    },
+    {
+        name: 'Stitches',
+        icon: stitchesIcon,
+        description:
+            'Sass (Syntactically Awesome Style Sheets) é uma extensão da linguagem CSS que oferece recursos avançados, como variáveis, aninhamento, mixins e funções, para facilitar a escrita e a organização de estilos. Com o Sass, é possível criar estilos mais eficientes e flexíveis, permitindo uma abordagem mais modular e escalável para o design de páginas da web.',
+    },
+    {
+        name: 'ChakraUI',
+        icon: chakrauiIcon,
+        description:
+            'Sass (Syntactically Awesome Style Sheets) é uma extensão da linguagem CSS que oferece recursos avançados, como variáveis, aninhamento, mixins e funções, para facilitar a escrita e a organização de estilos. Com o Sass, é possível criar estilos mais eficientes e flexíveis, permitindo uma abordagem mais modular e escalável para o design de páginas da web.',
+    },
+        {
+        name: 'Storybook',
+        icon: storybookIcon,
         description:
             'Sass (Syntactically Awesome Style Sheets) é uma extensão da linguagem CSS que oferece recursos avançados, como variáveis, aninhamento, mixins e funções, para facilitar a escrita e a organização de estilos. Com o Sass, é possível criar estilos mais eficientes e flexíveis, permitindo uma abordagem mais modular e escalável para o design de páginas da web.',
     },
