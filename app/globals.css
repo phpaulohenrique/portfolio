@@ -8,17 +8,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
-  --white-300: #F4F4F4;
 }
 
 html{
   scroll-behavior: smooth;
-}
-
-
-body {
-  background: var(--white-300);
-
- 
 }

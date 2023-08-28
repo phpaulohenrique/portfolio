@@ -112,7 +112,7 @@ export function Knowledge() {
         setCurrentTechOnHover(techs.find((el) => el.name === techName) || null)
     }
     return (
-        <section className="min-h-[60vh] pt-14 mt-10" id="knowledge">
+        <section className="min-h-[70vh] pt-14 mt-10" id="knowledge">
             <Fade damping={0.1} cascade triggerOnce>
                 <Heading>Conhecimentos</Heading>
                 <div className="flex justify-around flex-col gap-6 sm:flex-row sm:gap-0 items-center md:items-start">
@@ -131,7 +131,7 @@ export function Knowledge() {
                                 key={tech.name}
                                 src={tech.icon}
                                 alt="Javascript logo"
-                                className="border border-gray-300 w-20 h-20 p-4 rounded   hover:border-sky-500 transition-colors"
+                                className="border border-gray-300 w-20 h-20 p-4 rounded   hover:border-sky-500 transition-colors hover:shadow-lg hover:shadow-emerald-200"
                                 onMouseOver={() => showTechDescription(tech.name)}
                                 onMouseOut={() => setCurrentTechOnHover(null)}
                             />
