@@ -125,9 +125,7 @@ export default function Home() {
                     </>
                 </main>
 
-                <footer className="bg-gray-200 h-28 mt-10">
-                    <span></span>
-                </footer>
+                <footer className="h-20 border border-gray-300"></footer>
             </div>
         </>
     )

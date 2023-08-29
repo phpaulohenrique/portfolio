@@ -19,7 +19,7 @@ export const myProjects: IProjects[] = [
     {
         name: 'PHShop',
         imgUrl: phshopImg,
-        description: 'PHShop é um projeto pessoal que simula um e-commerce',
+        description: 'PHShop é um projeto que simula um e-commerce',
         appUrl: 'https://ph-shop.vercel.app',
         githubUrl: 'https://github.com/phpaulohenrique/ph-shop',
         techs: 'TypeScript, NextJS, ReactJS, Stitches, Stripe, Prisma, RadixUI.',
@@ -27,7 +27,7 @@ export const myProjects: IProjects[] = [
     {
         name: 'PHShop2',
         imgUrl: phshopImg,
-        description: 'PHShop é um projeto pessoal que simula um e-commerce',
+        description: 'PHShop é um projeto que simula um e-commerce',
         appUrl: 'https://ph-shop.vercel.app',
         githubUrl: 'https://github.com/phpaulohenrique/ph-shop',
         techs: 'TypeScript, NextJS, ReactJS, Stitches, Stripe, Prisma, RadixUI.',
@@ -35,7 +35,7 @@ export const myProjects: IProjects[] = [
     {
         name: 'PHShop3',
         imgUrl: phshopImg,
-        description: 'PHShop é um projeto pessoal que simula um e-commerce',
+        description: 'PHShop é um projeto que simula um e-commerce',
         appUrl: 'https://ph-shop.vercel.app',
         githubUrl: 'https://github.com/phpaulohenrique/ph-shop',
         techs: 'TypeScript, NextJS, ReactJS, Stitches, Stripe, Prisma, RadixUI.',
@@ -46,12 +46,12 @@ export function Projects() {
     return (
         <section className="min-h-[60vh] pt-14" id="projects">
             <Heading>Projetos</Heading>
-            <div className="flex gap-6 sm:gap-4 flex-wrap justify-center">
+            <div className="flex gap-6 sm:gap-6 flex-wrap justify-center">
                 <Fade cascade damping={0.2} triggerOnce>
                     {myProjects.map((project) => (
                         <div
                             key={project.name}
-                            className="bg-white px-6 py-6 rounded-md w-[28rem] drop-shadow-xl border border-gray-300 text-left hover:scale-[1.02] transition-all "
+                            className="bg-white px-6 py-6 rounded-md w-[22rem] drop-shadow-xl border border-gray-300 text-left hover:scale-[1.02] transition-all"
                         >
                             <h3 className="text-xl font-medium text-blue-800 mb-8 text-center">
                                 {project.name}
@@ -59,7 +59,7 @@ export function Projects() {
                             <Image src={project.imgUrl} alt={project.name} className="w-full" />
                             <p className="mt-8 text-sm  leading-relaxed">{project.description}</p>
                             <p className="mt-4 text-sm leading-relaxed ">
-                                <span className="font-medium text-base text-green-700">
+                                <span className="font-medium text-sm text-green-700">
                                     Tecnologias Utilizadas:
                                 </span>
                                 {project.techs} entre outras...

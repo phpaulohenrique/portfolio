@@ -32,16 +32,16 @@ const techs: ITech[] = [
             'JavaScript é uma linguagem de programação amplamente utilizada para desenvolver interatividade e funcionalidade em páginas da web. Ela permite criar elementos dinâmicos e responder a ações dos usuários no navegador.',
     },
     {
-        name: 'Typescript',
-        icon: tsIcon,
-        description:
-            'TypeScript é uma linguagem de programação que estende o JavaScript, adicionando tipagem estática e recursos avançados de orientação a objetos, tornando o desenvolvimento de software mais robusto e escalável.',
-    },
-    {
         name: 'ReactJS',
         icon: reactjsIcon,
         description:
             'ReactJS é uma biblioteca JavaScript usada para construir interfaces de usuário interativas e reativas, permitindo a criação de componentes reutilizáveis para construir aplicativos web modernos.',
+    },
+    {
+        name: 'Typescript',
+        icon: tsIcon,
+        description:
+            'TypeScript é uma linguagem de programação que estende o JavaScript, adicionando tipagem estática e recursos avançados de orientação a objetos, tornando o desenvolvimento de software mais robusto e escalável.',
     },
     {
         name: 'NextJS',
@@ -53,7 +53,7 @@ const techs: ITech[] = [
         name: 'TailwindCSS',
         icon: tailwindIcon,
         description:
-            ' Tailwind CSS é um framework de design de código aberto que oferece classes utilitárias pré-definidas para criar interfaces de usuário responsivas e estilizadas de forma eficiente, permitindo a construção rápida de designs personalizados em aplicações web.',
+            'TailwindCSS é um framework de design de código aberto que oferece classes utilitárias pré-definidas para criar interfaces de usuário responsivas e estilizadas de forma eficiente, permitindo a construção rápida de designs personalizados em aplicações web.',
     },
     {
         name: 'HTML',
@@ -89,19 +89,19 @@ const techs: ITech[] = [
         name: 'Stitches',
         icon: stitchesIcon,
         description:
-            'Sass (Syntactically Awesome Style Sheets) é uma extensão da linguagem CSS que oferece recursos avançados, como variáveis, aninhamento, mixins e funções, para facilitar a escrita e a organização de estilos. Com o Sass, é possível criar estilos mais eficientes e flexíveis, permitindo uma abordagem mais modular e escalável para o design de páginas da web.',
+            'Stitches é uma biblioteca de estilo em JavaScript que visa oferecer uma abordagem de "CSS-in-JS" mais eficiente e performática. Ela permite criar componentes estilizados com uma sintaxe simples, enquanto gera estilos otimizados em tempo de compilação para melhor desempenho. Stitches também oferece recursos como tema, variantes e regras de estilo globais.',
     },
     {
         name: 'ChakraUI',
         icon: chakrauiIcon,
         description:
-            'Sass (Syntactically Awesome Style Sheets) é uma extensão da linguagem CSS que oferece recursos avançados, como variáveis, aninhamento, mixins e funções, para facilitar a escrita e a organização de estilos. Com o Sass, é possível criar estilos mais eficientes e flexíveis, permitindo uma abordagem mais modular e escalável para o design de páginas da web.',
+            'Chakra UI é um poderoso framework de design para React que oferece uma ampla gama de componentes prontos para uso, seguindo princípios de design moderno e acessibilidade. Com uma documentação detalhada e flexibilidade para personalização.',
     },
-        {
+    {
         name: 'Storybook',
         icon: storybookIcon,
         description:
-            'Sass (Syntactically Awesome Style Sheets) é uma extensão da linguagem CSS que oferece recursos avançados, como variáveis, aninhamento, mixins e funções, para facilitar a escrita e a organização de estilos. Com o Sass, é possível criar estilos mais eficientes e flexíveis, permitindo uma abordagem mais modular e escalável para o design de páginas da web.',
+            'Storybook é uma ferramenta de desenvolvimento de interface de usuário que permite criar, visualizar e testar componentes de maneira isolada. Ele oferece um ambiente interativo para desenvolvedores construírem e documentarem componentes UI independentes, ajudando a garantir a consistência e reutilização.',
     },
 ]
 
@@ -131,7 +131,7 @@ export function Knowledge() {
                                 key={tech.name}
                                 src={tech.icon}
                                 alt="Javascript logo"
-                                className="border border-gray-300 w-[4.5rem] h-[4.5rem] p-4 rounded   hover:border-sky-500 transition-colors hover:shadow-lg hover:shadow-emerald-200"
+                                className="border border-blue-300 w-[4.5rem] h-[4.5rem] p-4 rounded   hover:border-sky-500 transition-colors duration-500 hover:shadow-md hover:shadow-sky-200"
                                 onMouseOver={() => showTechDescription(tech.name)}
                                 onMouseOut={() => setCurrentTechOnHover(null)}
                             />

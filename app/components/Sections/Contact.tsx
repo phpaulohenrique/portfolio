@@ -5,7 +5,7 @@ import { Fade } from 'react-awesome-reveal'
 
 export function Contact() {
     return (
-        <section className="min-h-[44vh] pt-14 " id="contact">
+        <section className="min-h-[60vh] pt-14 " id="contact">
             <Fade cascade damping={0.1} triggerOnce>
                 <Heading>Onde me encontrar</Heading>
                 <div className="flex gap-4 flex-col items-center">
