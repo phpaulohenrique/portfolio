@@ -4,6 +4,7 @@ import { ButtonLink } from '../Button/Button'
 import { Github, Send } from 'lucide-react'
 import Link from 'next/link'
 import phshopImg from '../../assets/img/phshop.png'
+import currencyImg from '../../assets/img/currency.png'
 import { Fade } from 'react-awesome-reveal'
 
 interface IProjects {
@@ -19,33 +20,35 @@ export const myProjects: IProjects[] = [
     {
         name: 'PHShop',
         imgUrl: phshopImg,
-        description: 'PHShop é um projeto que simula um e-commerce',
+        description:
+            'PHShop é um projeto que simula o funcionamento de um e-commerce, permitindo que os usuários realizem login por meio do Google e efetuem compras, entre outras funcionalidades.',
         appUrl: 'https://ph-shop.vercel.app',
         githubUrl: 'https://github.com/phpaulohenrique/ph-shop',
-        techs: 'TypeScript, NextJS, ReactJS, Stitches, Stripe, Prisma, RadixUI.',
+        techs: 'TypeScript, Javascript, NextJS, ReactJS, Stitches, Stripe, Prisma, RadixUI.',
     },
     {
-        name: 'PHShop2',
-        imgUrl: phshopImg,
-        description: 'PHShop é um projeto que simula um e-commerce',
-        appUrl: 'https://ph-shop.vercel.app',
-        githubUrl: 'https://github.com/phpaulohenrique/ph-shop',
-        techs: 'TypeScript, NextJS, ReactJS, Stitches, Stripe, Prisma, RadixUI.',
+        name: 'The Currency Converter',
+        imgUrl: currencyImg,
+        description:
+            'Currency Converter é um projeto de conversão de moedas que exibe a taxa de câmbio entre diferentes moedas e gera um gráfico ilustrativo com o histórico das conversões, entre outras funcionalidades.',
+        appUrl: 'https://thecurrencyconverter.vercel.app',
+        githubUrl: 'https://github.com/phpaulohenrique/currency-converter',
+        techs: 'TypeScript, Javascript, NextJS, ReactJS, TailwindCSS, ApexCharts.',
     },
-    {
-        name: 'PHShop3',
-        imgUrl: phshopImg,
-        description: 'PHShop é um projeto que simula um e-commerce',
-        appUrl: 'https://ph-shop.vercel.app',
-        githubUrl: 'https://github.com/phpaulohenrique/ph-shop',
-        techs: 'TypeScript, NextJS, ReactJS, Stitches, Stripe, Prisma, RadixUI.',
-    },
+    // {
+    //     name: 'PHShop3',
+    //     imgUrl: phshopImg,
+    //     description: 'PHShop é um projeto que simula um e-commerce',
+    //     appUrl: 'https://ph-shop.vercel.app',
+    //     githubUrl: 'https://github.com/phpaulohenrique/ph-shop',
+    //     techs: 'TypeScript, NextJS, ReactJS, Stitches, Stripe, Prisma, RadixUI.',
+    // },
 ]
 
 export function Projects() {
     return (
-        <section className="min-h-[60vh] pt-14" id="projects">
-            <Heading>Projetos</Heading>
+        <section className="min-h-[70vh] pt-14" id="projects">
+            <Heading>Projetos Principais</Heading>
             <div className="flex gap-6 sm:gap-6 flex-wrap justify-center">
                 <Fade cascade damping={0.2} triggerOnce>
                     {myProjects.map((project) => (
@@ -53,7 +56,7 @@ export function Projects() {
                             key={project.name}
                             className="bg-white px-6 py-6 rounded-md w-[22rem] drop-shadow-xl border border-gray-300 text-left hover:scale-[1.02] transition-all"
                         >
-                            <h3 className="text-xl font-medium text-blue-800 mb-8 text-center">
+                            <h3 className="text-xl font-medium text-green-600 mb-8 text-center">
                                 {project.name}
                             </h3>
                             <Image src={project.imgUrl} alt={project.name} className="w-full" />
