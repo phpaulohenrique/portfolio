@@ -91,9 +91,9 @@ export default function Home() {
                                     </strong>
                                 </Fade>
                             </h1>
-                            <p className="max-w-lg text-base text-blue-900">
-                                Sou Desenvolvedor Web com foco em desenvolvimento Frontend.
-                                Transformo problemas em interfaces simples através do código.
+                            <p className="max-w-lg text-base text-blue-800">
+                                Sou Desenvolvedor Web com especialização em Frontend, Dedicado em
+                                transformar desafios em interfaces simples por meio da programação!
                             </p>
 
                             <div className="flex gap-4 mt-8">

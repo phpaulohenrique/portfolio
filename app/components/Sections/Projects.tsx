@@ -21,7 +21,7 @@ export const myProjects: IProjects[] = [
         name: 'PHShop',
         imgUrl: phshopImg,
         description:
-            'PHShop é um projeto que simula o funcionamento de um e-commerce, permitindo que os usuários realizem login por meio do Google e efetuem compras, entre outras funcionalidades.',
+            'PHShop é um projeto que simula o funcionamento de um e-commerce, permitindo que os usuários realizem login por meio do Google e efetuem compras. entre outras funcionalidades.',
         appUrl: 'https://ph-shop.vercel.app',
         githubUrl: 'https://github.com/phpaulohenrique/ph-shop',
         techs: 'TypeScript, Javascript, NextJS, ReactJS, Stitches, Stripe, Prisma, RadixUI.',
@@ -30,7 +30,7 @@ export const myProjects: IProjects[] = [
         name: 'The Currency Converter',
         imgUrl: currencyImg,
         description:
-            'Currency Converter é um projeto de conversão de moedas que exibe a taxa de câmbio entre diferentes moedas e gera um gráfico ilustrativo com o histórico das conversões, entre outras funcionalidades.',
+            'The Currency Converter é um projeto de conversão de moedas que exibe a taxa de câmbio entre diferentes moedas e gera um gráfico ilustrativo com o histórico da variação. entre outras funcionalidades.',
         appUrl: 'https://thecurrencyconverter.vercel.app',
         githubUrl: 'https://github.com/phpaulohenrique/currency-converter',
         techs: 'TypeScript, Javascript, NextJS, ReactJS, TailwindCSS, ApexCharts.',
@@ -70,7 +70,7 @@ export function Projects() {
                             <div className="mt-4 flex gap-4 justify-center">
                                 <ButtonLink
                                     variant="primary"
-                                    href={project.githubUrl}
+                                    href={project.appUrl}
                                     className="h-9 px-3 min-w-max text-sm"
                                 >
                                     <Send className="w-5 h-5 text-white " />
