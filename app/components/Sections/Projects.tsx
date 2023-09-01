@@ -49,39 +49,41 @@ export function Projects() {
     return (
         <section className="min-h-[70vh] pt-14" id="projects">
             <Heading>Projetos Principais</Heading>
-            <div className="flex gap-6 sm:gap-6 flex-wrap justify-center">
+            <div className="flex flex-wrap justify-center gap-6 sm:gap-6">
                 <Fade cascade damping={0.2} triggerOnce>
                     {myProjects.map((project) => (
                         <div
                             key={project.name}
-                            className="bg-white px-6 py-6 rounded-md w-[22rem] drop-shadow-xl border border-gray-300 text-left hover:scale-[1.02] transition-all"
+                            className="w-[22rem] rounded-md border border-gray-300 bg-white px-6 py-6 text-left drop-shadow-xl transition-all hover:scale-[1.02]"
                         >
-                            <h3 className="text-xl font-medium text-green-600 mb-8 text-center">
+                            <h3 className="mb-8 text-center text-xl font-medium text-green-600">
                                 {project.name}
                             </h3>
                             <Image src={project.imgUrl} alt={project.name} className="w-full" />
                             <p className="mt-8 text-sm  leading-relaxed">{project.description}</p>
-                            <p className="mt-4 text-sm leading-relaxed ">
-                                <span className="font-medium text-sm text-green-700">
+                            <p className="mt-6 text-sm leading-relaxed ">
+                                <span className="text-sm font-medium text-green-700">
                                     Tecnologias Utilizadas:
                                 </span>
                                 {project.techs} entre outras...
                             </p>
-                            <div className="mt-4 flex gap-4 justify-center">
+                            <div className="mt-4 flex justify-center gap-4">
                                 <ButtonLink
                                     variant="primary"
                                     href={project.appUrl}
-                                    className="h-9 px-3 min-w-max text-sm"
+                                    className="h-9 min-w-max px-3 text-sm"
+                                    target="_blank"
                                 >
-                                    <Send className="w-5 h-5 text-white " />
+                                    <Send className="h-5 w-5 text-white " />
                                     Projeto
                                 </ButtonLink>
                                 <ButtonLink
                                     variant="secondary"
                                     href={project.githubUrl}
-                                    className="h-9 px-3 min-w-max text-sm"
+                                    className="h-9 min-w-max px-3 text-sm"
+                                    target="_blank"
                                 >
-                                    <Github className="w-5 h-5 text-emerald-600 " />
+                                    <Github className="h-5 w-5 text-emerald-600 " />
                                     GitHub
                                 </ButtonLink>
                             </div>
@@ -93,7 +95,7 @@ export function Projects() {
             <Link
                 href="https://github.com/phpaulohenrique?tab=repositories"
                 target="_blank"
-                className="text-sm mt-6 inline-block text-blue-800 underline decoration-1 underline-offset-4 hover:text-blue-600 transition-colors"
+                className="mt-8 inline-block text-sm text-blue-800 underline decoration-1 underline-offset-4 transition-colors hover:text-blue-600"
             >
                 Mais projetos no GitHub
             </Link>

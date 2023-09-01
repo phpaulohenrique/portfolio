@@ -8,21 +8,23 @@ export function Contact() {
         <section className="min-h-[60vh] pt-14 " id="contact">
             <Fade cascade damping={0.1} triggerOnce>
                 <Heading>Onde me encontrar</Heading>
-                <div className="flex gap-4 flex-col items-center">
+                <div className="flex flex-col items-center gap-4">
                     <ButtonLink
                         variant="secondary"
                         href="https://www.linkedin.com/in/paulo-henrique-857965187/"
                         className="w-48 justify-center"
+                        target="_blank"
                     >
-                        <Linkedin className="w-6 h-6 text-emerald-600" />
+                        <Linkedin className="h-6 w-6 text-emerald-600" />
                         LinkedIn
                     </ButtonLink>
                     <ButtonLink
                         variant="secondary"
                         href="https://github.com/phpaulohenrique"
                         className="w-48 justify-center"
+                        target="_blank"
                     >
-                        <Github className="w-6 h-6 text-emerald-600" />
+                        <Github className="h-6 w-6 text-emerald-600" />
                         GitHub
                     </ButtonLink>
                 </div>

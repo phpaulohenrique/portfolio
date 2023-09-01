@@ -18,58 +18,58 @@ export default function Home() {
     return (
         <>
             <LinesAnimation />
-            <div className="text-gray-800">
-                <header className="w-full  bg-gray-500 fixed top-0 bg-clip-padding backdrop-filter backdrop-blur-[5px] bg-opacity-5 shadow z-20">
-                    <div className="max-w-5xl m-auto flex justify-between  items-center p-4 md:p-3 h-12 ">
+            <div className="text-slate-800">
+                <header className="fixed  top-0 z-20 w-full bg-gray-500 bg-opacity-5 bg-clip-padding shadow backdrop-blur-[5px] backdrop-filter">
+                    <div className="m-auto flex h-12 max-w-5xl  items-center justify-between p-4 md:p-3 ">
                         <Link href="#start">
-                            <span className="text-gray-800 text-base">Paulo Henrique</span>
+                            <span className="text-base text-gray-800">Paulo Henrique</span>
                         </Link>
-                        <ul className="hidden gap-3 items-center text-sm text-gray-700  sm:flex ">
-                            <li className="px-2 py-1 rounded-md hover:bg-slate-300 hover:text-gray-800 transition-colors duration-300 ">
+                        <ul className="hidden items-center gap-3 text-sm text-gray-700  sm:flex ">
+                            <li className="rounded-md px-2 py-1 transition-colors duration-300 hover:bg-slate-300 hover:text-gray-800 ">
                                 <Link href="#about-me">Quem sou</Link>
                             </li>
-                            <li className="px-2 py-1 rounded-md hover:bg-slate-300 hover:text-gray-800 transition-colors duration-300">
+                            <li className="rounded-md px-2 py-1 transition-colors duration-300 hover:bg-slate-300 hover:text-gray-800">
                                 <Link href="#projects">Projetos</Link>
                             </li>
-                            <li className="px-2 py-1 rounded-md hover:bg-slate-300 hover:text-gray-800 transition-colors duration-300">
+                            <li className="rounded-md px-2 py-1 transition-colors duration-300 hover:bg-slate-300 hover:text-gray-800">
                                 <Link href="#knowledge">Conhecimentos</Link>
                             </li>
-                            <li className="px-2 py-1 rounded-md hover:bg-slate-300 hover:text-gray-800 transition-colors duration-300">
+                            <li className="rounded-md px-2 py-1 transition-colors duration-300 hover:bg-slate-300 hover:text-gray-800">
                                 <Link href="#contact">Contato</Link>
                             </li>
                         </ul>
                         <button onClick={toggleMenuBar} className="sm:hidden">
                             {isMenuOpen ? (
-                                <X className="w-6 h-6 text-sky-600" />
+                                <X className="h-6 w-6 text-sky-600" />
                             ) : (
-                                <Menu className="w-6 h-6 text-sky-600" />
+                                <Menu className="h-6 w-6 text-sky-600" />
                             )}
                         </button>
                     </div>
                 </header>
 
                 <div
-                    className={`bg-clip-padding backdrop-filter backdrop-blur-[10px] bg-opacity-[.15] shadow-lg bg-teal-100 w-full py-5 px-6 -translate-y-full fixed transition-translate duration-500 ease-out z-10 ${
-                        isMenuOpen && 'mt-12 fixed translate-y-0'
+                    className={`transition-translate fixed z-10 w-full -translate-y-full bg-teal-100 bg-opacity-[.15] bg-clip-padding px-6 py-5 shadow-lg backdrop-blur-[10px] backdrop-filter duration-500 ease-out ${
+                        isMenuOpen && 'fixed mt-12 translate-y-0'
                     }`}
                 >
                     <ul className="flex flex-col gap-4 text-sm text-gray-800  sm:hidden  ">
-                        <li className="underline decoration-solid decoration-emerald-600 underline-offset-4 w-max ">
+                        <li className="w-max underline decoration-emerald-600 decoration-solid underline-offset-4 ">
                             <Link href="#about-me" onClick={() => setIsMenuOpen(false)}>
                                 Quem sou
                             </Link>
                         </li>
-                        <li className="underline decoration-solid decoration-emerald-600 underline-offset-4  w-max">
+                        <li className="w-max underline decoration-emerald-600 decoration-solid  underline-offset-4">
                             <Link href="#projects" onClick={() => setIsMenuOpen(false)}>
                                 Projetos
                             </Link>
                         </li>
-                        <li className="underline decoration-solid decoration-emerald-600 underline-offset-4 w-max">
+                        <li className="w-max underline decoration-emerald-600 decoration-solid underline-offset-4">
                             <Link href="#knowledge" onClick={() => setIsMenuOpen(false)}>
                                 Conhecimentos
                             </Link>
                         </li>
-                        <li className="underline decoration-solid decoration-emerald-600 underline-offset-4 w-max">
+                        <li className="w-max underline decoration-emerald-600 decoration-solid underline-offset-4">
                             <Link href="#contact" onClick={() => setIsMenuOpen(false)}>
                                 Contato
                             </Link>
@@ -77,16 +77,16 @@ export default function Home() {
                     </ul>
                 </div>
 
-                <main className="min-h-screen text-center w-full m-auto max-w-5xl p-6 sm:p-4">
+                <main className="m-auto min-h-screen w-full max-w-5xl p-6 text-center sm:p-4">
                     <section
-                        className="min-h-screen flex items-center justify-center flex-col"
+                        className="flex min-h-screen flex-col items-center justify-center"
                         id="start"
                     >
                         <Slide direction="up" triggerOnce>
-                            <h1 className="text-2xl lg:text-3xl text-slate-700">
+                            <h1 className="text-2xl text-slate-700 lg:text-3xl">
                                 Olá, eu sou o Paulo Henrique{' '}
                                 <Fade delay={200} triggerOnce>
-                                    <strong className=" text-[4rem] lg:text-[5rem] p-4 uppercase font-black block mb-3 tracking-tight bg-clip-text text-transparent bg-gradient-frontend leading-[4rem]">
+                                    <strong className=" mb-3 block bg-gradient-frontend bg-clip-text p-4 text-[4rem] font-black uppercase leading-[4rem] tracking-tight text-transparent lg:text-[5rem]">
                                         frontend developer
                                     </strong>
                                 </Fade>
@@ -96,13 +96,13 @@ export default function Home() {
                                 transformar desafios em interfaces simples por meio da programação!
                             </p>
 
-                            <div className="flex gap-4 mt-8">
+                            <div className="mt-8 flex gap-4">
                                 <ButtonLink variant="secondary" href="#projects">
-                                    <Briefcase className="w-6 h-6 text-emerald-600 " />
+                                    <Briefcase className="h-6 w-6 text-emerald-600 " />
                                     Projetos
                                 </ButtonLink>
                                 <ButtonLink variant="primary" href="#contact">
-                                    <Send className="w-5 h-5 text-white " />
+                                    <Send className="h-5 w-5 text-white " />
                                     Contato
                                 </ButtonLink>
                             </div>
@@ -115,7 +115,7 @@ export default function Home() {
 
                         </div> */}
                         </Slide>
-                        <ArrowDown className="w-5 h-5 text-purple-600 absolute bottom-20 animate-bounce " />
+                        <ArrowDown className="absolute bottom-12 h-5 w-5 animate-bounce text-purple-600 " />
                     </section>
                     <>
                         <AboutMe />

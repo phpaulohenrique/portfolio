@@ -6,17 +6,17 @@ export function AboutMe() {
         <section className="min-h-[50vh] pt-14 " id="about-me">
             <Fade cascade damping={0.1} triggerOnce>
                 <Heading>Sobre mim</Heading>
-                <div className="text-left text-sm leading-loose max-w-[44rem] m-auto flex flex-col gap-3">
+                <div className="m-auto flex max-w-[44rem] flex-col gap-3 text-left text-sm leading-loose">
                     <Fade cascade damping={0.3} triggerOnce>
                         <p>
-                            Olá, sou Paulo Henrique, tenho 22 anos e atuo como Desenvolvedor
-                            Front-end. Minha formação abrange tecnologia em análise e
-                            desenvolvimento de sistemas.
+                            Sou o Paulo Henrique, tenho 22 anos e atuo como Desenvolvedor Front-end.
+                            Tenho formação em tecnologia em análise e desenvolvimento de sistemas
+                            pelo Instituto Federal de MT.
                         </p>
                         <p>
-                            Tenho paixão por criar sites modernos de alta qualidade, nos quais
-                            dedico atenção aos mínimos detalhes, com foco em garantir performance e
-                            responsividade desde smartphones até desktops.
+                            Crio sites modernos de alta qualidade, nos quais dedico atenção aos
+                            mínimos detalhes, com foco em garantir performance e responsividade
+                            desde smartphones até desktops.
                         </p>
                         <p>
                             Minha expertise abrange o desenvolvimento de uma variedade de projetos

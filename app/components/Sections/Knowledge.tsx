@@ -112,30 +112,33 @@ export function Knowledge() {
         setCurrentTechOnHover(techs.find((el) => el.name === techName) || null)
     }
     return (
-        <section className="min-h-[70vh] pt-14 mt-10" id="knowledge">
+        <section className="mt-10 min-h-[70vh] pt-14" id="knowledge">
             <Fade damping={0.1} cascade triggerOnce>
                 <Heading>Conhecimentos</Heading>
-                <div className="flex justify-around flex-col gap-6 sm:flex-row sm:gap-0 items-center md:items-start">
-                    <div className="max-w-sm w-full order-2 sm:order-1">
+                <div className="flex flex-col items-center justify-around gap-6 sm:flex-row sm:gap-0 md:items-start">
+                    <div className="order-2 w-full max-w-sm sm:order-1">
                         {
-                            <p className="text-sm text-gray-700 leading-loose text-left">
-                                {currentTechOnHover?.description ??
+                            <p className="text-left text-sm leading-loose ">
+                                {currentTechOnHover?.description ||
                                     '*passe o cursor do mouse no card para ler'}
                             </p>
                         }
                     </div>
 
-                    <div className="grid grid-cols-3 lg:grid-cols-4 w-max gap-4 order-1 sm:order-2">
-                        {techs.map((tech) => (
-                            <Image
-                                key={tech.name}
-                                src={tech.icon}
-                                alt="Javascript logo"
-                                className="border border-blue-300 w-[4.5rem] h-[4.5rem] p-4 rounded   hover:border-sky-500 transition-colors duration-500 hover:shadow-md hover:shadow-sky-200"
-                                onMouseOver={() => showTechDescription(tech.name)}
-                                onMouseOut={() => setCurrentTechOnHover(null)}
-                            />
-                        ))}
+                    <div className="order-1 grid w-max grid-cols-3 gap-4 sm:order-2 lg:grid-cols-4  ">
+                        <Fade damping={0.2} cascade triggerOnce>
+                            {techs.map((tech) => (
+                                <Image
+                                    key={tech.name}
+                                    title={tech.name}
+                                    src={tech.icon}
+                                    alt={tech.name}
+                                    className="h-[4.5rem] w-[4.5rem] rounded border border-blue-300 p-4  transition-colors duration-700 hover:border-sky-600 hover:shadow-md hover:shadow-sky-200"
+                                    onMouseOver={() => showTechDescription(tech.name)}
+                                    onMouseOut={() => setCurrentTechOnHover(null)}
+                                />
+                            ))}
+                        </Fade>
                     </div>
                 </div>
             </Fade>

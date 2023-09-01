@@ -5,19 +5,20 @@ interface IButtonLink extends LinkProps {
     variant: 'primary' | 'secondary'
     children: ReactNode
     className?: string
+    target?: string
 }
 
 export function ButtonLink({ variant, children, className, ...rest }: IButtonLink) {
     return variant === 'primary' ? (
         <Link
-            className={`h-11 px-6 border border-sky-500 bg-sky-600 text-white rounded-lg font-medium flex items-center gap-2 min-w-[8rem] hover:brightness-110 transition-brightness duration-300 ${className}`}
+            className={`transition-brightness flex h-11 min-w-[8rem] items-center gap-2 rounded-lg border border-sky-500 bg-sky-600 px-6 font-medium text-white duration-300 hover:brightness-110 ${className}`}
             {...rest}
         >
             {children}
         </Link>
     ) : (
         <Link
-            className={`h-11 px-6 bg-transparent border border-emerald-400 text-zinc-700 rounded-lg font-medium flex items-center gap-2 min-w-[8rem] hover:bg-green-100 transition-colors duration-300 ${className}`}
+            className={`flex h-11 min-w-[8rem] items-center gap-2 rounded-lg border border-emerald-400 bg-transparent px-6 font-medium text-zinc-700 transition-colors duration-300 hover:bg-green-100 ${className}`}
             {...rest}
         >
             {children}
