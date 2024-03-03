@@ -11,7 +11,7 @@ export function Contact() {
                 <div className="flex flex-col items-center gap-4">
                     <ButtonLink
                         variant="secondary"
-                        href="https://www.linkedin.com/in/paulo-henrique-857965187/"
+                        href="https://www.linkedin.com/in/paulo-henrique-melo/"
                         className="w-48 justify-center"
                         target="_blank"
                     >

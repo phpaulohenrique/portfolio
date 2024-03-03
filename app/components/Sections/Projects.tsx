@@ -31,7 +31,7 @@ export const myProjects: IProjects[] = [
         imgUrl: currencyImg,
         description:
             'The Currency Converter é um projeto de conversão de moedas que exibe a taxa de câmbio entre diferentes moedas e gera um gráfico ilustrativo com o histórico da variação. entre outras funcionalidades.',
-        appUrl: 'https://thecurrencyconverter.vercel.app',
+        appUrl: 'https://thecurrencytracker.vercel.app',
         githubUrl: 'https://github.com/phpaulohenrique/currency-converter',
         techs: 'TypeScript, Javascript, NextJS, ReactJS, TailwindCSS, ApexCharts.',
     },
