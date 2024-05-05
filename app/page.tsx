@@ -53,28 +53,32 @@ export default function Home() {
                         isMenuOpen && 'fixed mt-12 translate-y-0'
                     }`}
                 >
-                    <ul className="flex flex-col gap-4 text-sm text-gray-800  sm:hidden  ">
-                        <li className="w-max underline decoration-emerald-600 decoration-solid underline-offset-4 ">
-                            <Link href="#about-me" onClick={() => setIsMenuOpen(false)}>
-                                Quem sou
-                            </Link>
-                        </li>
-                        <li className="w-max underline decoration-emerald-600 decoration-solid  underline-offset-4">
-                            <Link href="#projects" onClick={() => setIsMenuOpen(false)}>
-                                Projetos
-                            </Link>
-                        </li>
-                        <li className="w-max underline decoration-emerald-600 decoration-solid underline-offset-4">
-                            <Link href="#knowledge" onClick={() => setIsMenuOpen(false)}>
-                                Conhecimentos
-                            </Link>
-                        </li>
-                        <li className="w-max underline decoration-emerald-600 decoration-solid underline-offset-4">
-                            <Link href="#contact" onClick={() => setIsMenuOpen(false)}>
-                                Contato
-                            </Link>
-                        </li>
-                    </ul>
+                    <nav>
+                        <ul className="flex flex-col gap-4 text-sm text-gray-800  sm:hidden  ">
+                            <li className="w-max underline decoration-emerald-600 decoration-solid underline-offset-4 ">
+                                <Link href="#about-me" onClick={() => setIsMenuOpen(false)}>
+                                    Quem sou
+                                </Link>
+                            </li>
+                            <li className="w-max underline decoration-emerald-600 decoration-solid  underline-offset-4">
+                                <Link href="#projects" onClick={() => setIsMenuOpen(false)}>
+                                    Projetos
+                                </Link>
+                            </li>
+                            <li className="w-max underline decoration-emerald-600 decoration-solid underline-offset-4">
+                                <Link href="#knowledge" onClick={() => setIsMenuOpen(false)}>
+                                    Conhecimentos
+                                </Link>
+                            </li>
+                            <li className="w-max underline decoration-emerald-600 decoration-solid underline-offset-4">
+                                <Link href="#contact" onClick={() => setIsMenuOpen(false)}>
+                                    Contato
+                                </Link>
+                            </li>
+                        </ul>
+
+                    </nav>
+                   
                 </div>
 
                 <main className="m-auto min-h-screen w-full max-w-5xl p-6 text-center sm:p-4">
