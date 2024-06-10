@@ -76,9 +76,7 @@ export default function Home() {
                                 </Link>
                             </li>
                         </ul>
-
                     </nav>
-                   
                 </div>
 
                 <main className="m-auto min-h-screen w-full max-w-5xl p-6 text-center sm:p-4">
@@ -90,14 +88,15 @@ export default function Home() {
                             <h1 className="text-2xl text-slate-700 lg:text-3xl">
                                 Olá, eu sou o Paulo Henrique{' '}
                                 <Fade delay={200} triggerOnce>
-                                    <strong className=" mb-3 block bg-gradient-frontend bg-clip-text p-4 text-[4rem] font-black uppercase leading-[4rem] tracking-tight text-transparent lg:text-[5rem]">
-                                        frontend developer
+                                    <strong className=" mb-3 block bg-gradient-frontend bg-clip-text p-4 text-[3.5rem] font-black uppercase leading-[4rem] tracking-tight text-transparent lg:text-[5rem]">
+                                        fullstack developer
                                     </strong>
                                 </Fade>
                             </h1>
                             <p className="max-w-lg text-base text-blue-800">
-                                Sou Desenvolvedor Web com especialização em Frontend, Dedicado em
-                                transformar desafios em interfaces simples por meio da programação!
+                                Sou Desenvolvedor FullStack com especialização em Frontend, Dedicado
+                                em transformar desafios em interfaces simples por meio da
+                                programação!
                             </p>
 
                             <div className="mt-8 flex gap-4">
@@ -110,14 +109,15 @@ export default function Home() {
                                     Contato
                                 </ButtonLink>
                             </div>
+
                             {/* <div className="flex gap-2">
                             <span className="relative h-4 w-4">
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
                                 <span className="absolute inline-flex rounded-full h-4 w-4 bg-green-500"></span>
                             </span>
-                            <span>Open to work</span>
+                            <span>Open to work</span> */}
 
-                        </div> */}
+                            {/* </div> */}
                         </Slide>
                         <ArrowDown className="absolute bottom-12 h-5 w-5 animate-bounce text-purple-600 " />
                     </section>

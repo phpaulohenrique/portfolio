@@ -27,23 +27,31 @@ export function AboutMe() {
                 <div className="m-auto flex max-w-[44rem] flex-col gap-3 text-left text-sm leading-loose">
                     <Fade cascade damping={0.3} triggerOnce>
                         <p>
-                            Sou o Paulo Henrique, tenho {myAge} anos e atualmente atuo como
-                            Desenvolvedor Front-end em uma empresa de Software. Tenho formação em
+                            Sou o Paulo Henrique, tenho {myAge} anos, atuo como Desenvolvedor Full
+                            Stack, mas minha verdadeira paixão está no Front-end. Tenho formação em
                             tecnologia em análise e desenvolvimento de sistemas pelo Instituto
                             Federal de MT.
                         </p>
+
                         <p>
-                            Crio sites modernos de alta qualidade, nos quais dedico atenção aos
-                            mínimos detalhes, com foco em garantir performance e responsividade
-                            desde smartphones até desktops.
+                            Embora meu foco atual seja o desenvolvimento Front-end, estou sempre
+                            curioso para aprender mais sobre Back-end e design de UI.
                         </p>
+
                         <p>
-                            Minha expertise abrange o desenvolvimento de uma variedade de projetos
-                            web, desde sistemas web a blogs, portfólios e landing pages. Meu
-                            objetivo é proporcionar soluções digitais que não apenas impressionem
-                            visualmente, mas também ofereçam uma experiência excepcional aos
-                            usuários!
+                            Adoro criar aplicações modernas e de alta qualidade, prestando atenção a
+                            cada detalhe para garantir que funcionem perfeitamente tanto em
+                            smartphones quanto em desktops. Desde sistemas web, sites profissionais
+                            e landing pages, estou sempre focado em oferecer uma experiência
+                            excepcional para os usuários.
                         </p>
+
+                        {/* <p>
+                            Meu objetivo é criar soluções digitais que não só impressionem
+                            visualmente, mas que também ofereçam uma experiência incrível aos
+                            usuários. Estou animado com as possibilidades futuras e sempre em busca
+                            de novos desafios!
+                        </p> */}
                     </Fade>
                 </div>
             </Fade>
