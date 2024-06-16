@@ -5,7 +5,7 @@ import { Projects } from './components/Sections/Projects'
 import { Knowledge } from './components/Sections/Knowledge'
 import { Contact } from './components/Sections/Contact'
 import { ButtonLink } from './components/Button/Button'
-import { ArrowDown, Briefcase, Menu, Send, X } from 'lucide-react'
+import { ArrowDown, Briefcase, Download, Menu, Send, X } from 'lucide-react'
 import { useState } from 'react'
 import { LinesAnimation } from './components/LinesAnimation'
 import { Fade, Slide } from 'react-awesome-reveal'
@@ -130,6 +130,16 @@ export default function Home() {
                 </main>
 
                 <footer className="h-20 border border-gray-300"></footer>
+
+                <ButtonLink
+                    className="fixed  bottom-5 right-3 bg-gradient-to-r from-cyan-500 to-blue-700 shadow-[0px_4px_15px_6px_#00000028] md:bottom-10 md:right-5"
+                    variant="primary"
+                    href="/Curriculo-Paulo-Henrique-da-Silva-Melo-Desenvolvedor.pdf"
+                    target="_blank"
+                >
+                    <Download className="h-5 w-5 text-white " />
+                    <span className="">Curriculo</span>
+                </ButtonLink>
             </div>
         </>
     )
