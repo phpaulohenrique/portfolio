@@ -138,7 +138,7 @@ export default function Home() {
                     target="_blank"
                 >
                     <Download className="h-5 w-5 text-white " />
-                    <span className="">Curriculo</span>
+                    <span className="">Currículo</span>
                 </ButtonLink>
             </div>
         </>
