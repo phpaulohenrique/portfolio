@@ -119,7 +119,7 @@ export default function Home() {
 
                             {/* </div> */}
                         </Slide>
-                        <ArrowDown className="absolute bottom-12 h-5 w-5 animate-bounce text-purple-600 " />
+                        <ArrowDown className="absolute bottom-12 h-6 w-6 animate-bounce text-emerald-700 " />
                     </section>
                     <>
                         <Projects />
