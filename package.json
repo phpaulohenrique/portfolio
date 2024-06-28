@@ -17,19 +17,20 @@
     "next": "13.4.12",
     "react": "18.2.0",
     "react-awesome-reveal": "^4.2.5",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sharp": "^0.33.4"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",
-    "eslint": "^8.47.0",
-    "prettier": "^3.0.1",
-    "prettier-plugin-tailwindcss": "^0.5.2",
     "@types/node": "20.4.5",
     "@types/react": "18.2.17",
     "@types/react-dom": "18.2.7",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.1.6",
+    "eslint": "^8.47.0",
     "eslint-config-next": "13.4.12",
-    "postcss": "8.4.27"
+    "postcss": "8.4.27",
+    "prettier": "^3.0.1",
+    "prettier-plugin-tailwindcss": "^0.5.2",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
   }
 }

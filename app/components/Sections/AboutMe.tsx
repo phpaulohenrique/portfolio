@@ -35,8 +35,8 @@ export function AboutMe() {
                         </p>
 
                         <p>
-                            Embora meu foco atual seja o desenvolvimento Front-end, estou sempre
-                            curioso para aprender mais sobre Back-end e design de interface.
+                            Embora meu foco atual seja o desenvolvimento Front-end, também tenho
+                            conhecimentos e interesse em Back-end e design de interface UI/UX.
                         </p>
 
                         <p>
