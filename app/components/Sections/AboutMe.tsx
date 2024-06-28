@@ -27,7 +27,11 @@ export function AboutMe() {
                 <div className="m-auto flex max-w-[44rem] flex-col gap-3 text-left text-sm leading-loose">
                     <Fade cascade damping={0.3} triggerOnce>
                         <p>
-                        Sou o Paulo Henrique, tenho {myAge} anos, sou Desenvolvedor Full Stack entusiasta por Front-end. Com 10 meses de experiência profissional como desenvolvedor e formação em tecnologia pelo IFMT, busco constantemente aprimorar minhas habilidades. Desde 2022, dedico-me ao desenvolvimento web.
+                            Sou o Paulo Henrique, tenho {myAge} anos, sou Desenvolvedor Full Stack
+                            entusiasta por Front-end. Com 10 meses de experiência profissional como
+                            desenvolvedor e formação em tecnologia pelo IFMT, busco constantemente
+                            aprimorar minhas habilidades. Desde 2022, dedico-me ao desenvolvimento
+                            web.
                         </p>
 
                         <p>
