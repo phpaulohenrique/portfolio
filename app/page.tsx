@@ -25,11 +25,11 @@ export default function Home() {
                             <span className="text-base text-gray-800">Paulo Henrique</span>
                         </Link>
                         <ul className="hidden items-center gap-3 text-sm text-gray-700  sm:flex ">
-                            <li className="rounded-md px-2 py-1 transition-colors duration-300 hover:bg-slate-300 hover:text-gray-800 ">
-                                <Link href="#about-me">Quem sou</Link>
-                            </li>
                             <li className="rounded-md px-2 py-1 transition-colors duration-300 hover:bg-slate-300 hover:text-gray-800">
                                 <Link href="#projects">Projetos</Link>
+                            </li>
+                            <li className="rounded-md px-2 py-1 transition-colors duration-300 hover:bg-slate-300 hover:text-gray-800 ">
+                                <Link href="#about-me">Quem sou</Link>
                             </li>
                             <li className="rounded-md px-2 py-1 transition-colors duration-300 hover:bg-slate-300 hover:text-gray-800">
                                 <Link href="#knowledge">Conhecimentos</Link>
@@ -88,7 +88,7 @@ export default function Home() {
                             <h1 className="text-2xl text-slate-700 lg:text-3xl">
                                 Olá, eu sou o Paulo Henrique{' '}
                                 <Fade delay={200} triggerOnce>
-                                    <strong className=" mb-3 block bg-gradient-frontend bg-clip-text p-4 text-[3.5rem] font-black uppercase leading-[4rem] tracking-tight text-transparent lg:text-[5rem]">
+                                    <strong className=" mb-3 block bg-gradient-frontend bg-clip-text p-4 text-[3.8rem] font-black uppercase leading-[4rem] tracking-tight text-transparent lg:text-[5rem]">
                                         fullstack developer
                                     </strong>
                                 </Fade>
@@ -122,8 +122,8 @@ export default function Home() {
                         <ArrowDown className="absolute bottom-12 h-5 w-5 animate-bounce text-purple-600 " />
                     </section>
                     <>
-                        <AboutMe />
                         <Projects />
+                        <AboutMe />
                         <Knowledge />
                         <Contact />
                     </>

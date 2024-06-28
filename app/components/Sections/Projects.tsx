@@ -5,6 +5,7 @@ import { Github, Send } from 'lucide-react'
 import Link from 'next/link'
 import phshopImg from '../../assets/img/phshop.png'
 import currencyImg from '../../assets/img/currency.png'
+import focalPointImg from '../../assets/img/focalpoint.png'
 import { Fade } from 'react-awesome-reveal'
 
 interface IProjects {
@@ -21,19 +22,29 @@ export const myProjects: IProjects[] = [
         name: 'PHShop',
         imgUrl: phshopImg,
         description:
-            'PHShop é um projeto que simula o funcionamento de um e-commerce, permitindo que os usuários realizem login por meio do Google e efetuem compras. entre outras funcionalidades.',
+            'PHShop é uma aplicação Full Stack que simula o funcionamento de um e-commerce, permitindo que os usuários realizem login por meio do Google e efetuem compras. entre outras funcionalidades.',
         appUrl: 'https://ph-shop.vercel.app',
         githubUrl: 'https://github.com/phpaulohenrique/ph-shop',
-        techs: 'TypeScript, Javascript, NextJS, ReactJS, Stitches, Stripe, Prisma, RadixUI.',
+        techs: 'TypeScript, Javascript, NextJS, ReactJS, Stitches, Stripe, Prisma, RadixUI',
     },
+
     {
         name: 'The Currency Converter',
         imgUrl: currencyImg,
         description:
-            'The Currency Converter é um projeto de conversão de moedas que exibe a taxa de câmbio entre diferentes moedas e gera um gráfico ilustrativo com o histórico da variação. entre outras funcionalidades.',
+            'The Currency Converter é uma aplicação de conversão de moedas que exibe a taxa de câmbio entre diferentes moedas e gera um gráfico ilustrativo com o histórico da variação. entre outras funcionalidades.',
         appUrl: 'https://thecurrencytracker.vercel.app',
         githubUrl: 'https://github.com/phpaulohenrique/currency-converter',
         techs: 'TypeScript, Javascript, NextJS, ReactJS, TailwindCSS, ApexCharts.',
+    },
+    {
+        name: 'Focal Point',
+        imgUrl: focalPointImg,
+        description:
+            'Focal Point é uma aplicação para gestão de tarefas, permitindo criação de conta, login, criação de tarefas, edição, listagem e exclusão de tarefas. entre outras funcionalidades.',
+        appUrl: 'https://focal-point-front-end.vercel.app/sign-up',
+        githubUrl: 'https://github.com/phpaulohenrique/focal-point-front-end',
+        techs: 'TypeScript, Javascript, NextJS, ReactJS, nodeJS, prisma, Docker, Fastify',
     },
     // {
     //     name: 'PHShop3',
@@ -59,7 +70,7 @@ export function Projects() {
                             <h3 className="mb-8 text-center text-xl font-medium text-green-600">
                                 {project.name}
                             </h3>
-                            <Image src={project.imgUrl} alt={project.name} className="w-full" />
+                            <Image src={project.imgUrl} alt={project.name} className="w-full " />
                             <p className="mt-8 text-sm  leading-relaxed">{project.description}</p>
                             <p className="mt-6 text-sm leading-relaxed ">
                                 <span className="text-sm font-medium text-green-700">
