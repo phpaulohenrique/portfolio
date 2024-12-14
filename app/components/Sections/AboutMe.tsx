@@ -27,16 +27,15 @@ export function AboutMe() {
                 <div className="m-auto flex max-w-[44rem] flex-col gap-3 text-left text-sm leading-loose">
                     <Fade cascade damping={0.3} triggerOnce>
                         <p>
-                            Sou o Paulo Henrique, tenho {myAge} anos, sou Desenvolvedor Full Stack
-                            entusiasta por Front-end. Com mais de 1 ano de experiência profissional
-                            como desenvolvedor e formação em tecnologia pelo IFMT, busco
-                            constantemente aprimorar minhas habilidades. Desde 2021, dedico-me ao
-                            desenvolvimento web.
+                            Sou o Paulo Henrique, tenho {myAge} anos, sou Desenvolvedor Full Stack.
+                            Com mais de 1 ano e meio de experiência profissional como desenvolvedor
+                            e formação em tecnologia pelo IFMT, busco constantemente aprimorar
+                            minhas habilidades. Desde 2021, dedico-me ao desenvolvimento web.
                         </p>
 
                         <p>
-                            Embora meu foco atual seja o desenvolvimento Front-end, também tenho
-                            conhecimentos e interesse em Back-end e design de interface UI/UX.
+                            Embora meu foco atual seja o desenvolvimento Back-end, também tenho
+                            conhecimentos e interesse em Front-end e design de interface UI/UX.
                         </p>
 
                         <p>
@@ -46,13 +45,6 @@ export function AboutMe() {
                             e landing pages, estou sempre focado em oferecer uma experiência
                             excepcional para os usuários.
                         </p>
-
-                        {/* <p>
-                            Meu objetivo é criar soluções digitais que não só impressionem
-                            visualmente, mas que também ofereçam uma experiência incrível aos
-                            usuários. Estou animado com as possibilidades futuras e sempre em busca
-                            de novos desafios!
-                        </p> */}
                     </Fade>
                 </div>
             </Fade>

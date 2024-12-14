@@ -16,6 +16,9 @@ import sassIcon from '@/app/assets/icons/sass.svg'
 import stitchesIcon from '@/app/assets/icons/stitches.svg'
 import chakrauiIcon from '@/app/assets/icons/chakraui.svg'
 import storybookIcon from '@/app/assets/icons/storybook.svg'
+import nestIcon from '@/app/assets/icons/nestjs.svg'
+import nodeIcon from '@/app/assets/icons/node.svg'
+import sqlIcon from '@/app/assets/icons/sql.svg'
 
 interface ITech {
     name: string
@@ -48,6 +51,24 @@ const techs: ITech[] = [
         icon: nextjsIcon,
         description:
             'NextJS é um framework de desenvolvimento React que simplifica a criação de aplicativos web com renderização do lado do servidor, facilitando o desempenho, SEO e a construção de páginas dinâmicas.',
+    },
+    {
+        name: 'NestJS',
+        icon: nestIcon,
+        description:
+            'NestJS é um framework Node.js progressivo para construção de aplicações server-side eficientes e escaláveis. Ele utiliza TypeScript por padrão e é baseado em conceitos como modularidade e injeção de dependência.',
+    },
+    {
+        name: 'NodeJS',
+        icon: nodeIcon,
+        description:
+            'Node.js é um ambiente de execução JavaScript que permite criar aplicações escaláveis no lado do servidor. Ele utiliza um modelo assíncrono e orientado a eventos, ideal para construir APIs rápidas e eficientes.',
+    },
+    {
+        name: 'SQL',
+        icon: sqlIcon,
+        description:
+            'SQL (Structured Query Language) é uma linguagem padrão para gerenciar e manipular bancos de dados relacionais. Ela permite criar, consultar, atualizar e excluir dados de forma eficiente e estruturada.',
     },
     {
         name: 'TailwindCSS',
